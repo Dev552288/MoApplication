@@ -4,12 +4,12 @@
     android:title="Home"
     android:icon="@drawable/ic_home"/>
     <item android:id="@+id/result"
-        android:title="Result"
-        android:icon="@drawable/ic_article"/>
+        android:title="Facebook"
+        android:icon="@drawable/facebook"/>
     <item android:id="@+id/attendance"
-        android:title="Attendance"
-        android:icon="@drawable/ic_assessment"/>
+        android:title="Google"
+        android:icon="@drawable/google"/>
     <item android:id="@+id/profile"
-        android:title="Profile"
-        android:icon="@drawable/ic_person"/>
+        android:title="Instagram"
+        android:icon="@drawable/insta"/>
 </menu>

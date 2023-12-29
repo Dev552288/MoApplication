@@ -1,0 +1,12 @@
+
+c
+java:S1192§"FDefine a constant instead of duplicating this literal "image" 4 times.(Ô»ôB8øš§ÅÈ1
+p	java:S116'"ORename this field "Sign" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´çÙøüÿÿÿÿ8è›§ÅÈ1
+h
+java:S1659%"KDeclare "createPassword" and all following declarations on a separate line.(åû—ë8ø›§ÅÈ1
+N
+java:S1659&",Declare "alredyRegister" on a separate line.(Â‚åÙûÿÿÿÿ8ø›§ÅÈ1
+t
+java:S37760"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(¨Œşÿÿÿÿ8ˆœ§ÅÈ1
+X	java:S125G"<This block of commented-out lines of code should be removed.(Íû®æ8—œ§ÅÈ1
+]	java:S125O"<This block of commented-out lines of code should be removed.(‘¹ƒııÿÿÿÿ8—œ§ÅÈ1

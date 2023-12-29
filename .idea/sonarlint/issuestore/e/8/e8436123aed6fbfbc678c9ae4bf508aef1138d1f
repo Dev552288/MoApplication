@@ -1,0 +1,11 @@
+
+>
+java:S1604"(Make this anonymous inner class a lambda(ÏÔ“
+o
+java:S1450"TRemove the "image" field and declare it as a local variable in the relevant methods.(şõØ“øÿÿÿÿ
+j
+java:S1450"TRemove the "start" field and declare it as a local variable in the relevant methods.(öØıÅ
+o
+java:S1450"YRemove the "tridentCom" field and declare it as a local variable in the relevant methods.(’ğ¼ô
+D
+java:S1068".Remove this unused "tridentCom" private field.(’ğ¼ô

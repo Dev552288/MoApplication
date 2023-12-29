@@ -1,0 +1,9 @@
+
+r	java:S117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õô×Íùÿÿÿÿ8¾ËşÅÈ1
+p	java:S116,"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß†ııÿÿÿÿ8„ÌşÅÈ1
+n
+java:S1845,"LRename field "Name" to prevent any misunderstanding/clash with field "name".(ß†ııÿÿÿÿ8”ÌşÅÈ1
+M
+java:S1874‰"/Remove this use of "Handler"; it is deprecated.(õÊëì8âÌşÅÈ1
+X
+java:S2209"5Change this instance-reference to a static reference.(õİ÷¨şÿÿÿÿ8âÌşÅÈ1

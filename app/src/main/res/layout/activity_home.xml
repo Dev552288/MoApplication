@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".activity.HomeActivity">
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -14,19 +14,18 @@
         android:layout_marginBottom="56dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#fff"
+        android:background="@color/purple"
         app:itemIconSize="25dp"
-        app:itemIconTint="@color/purple_500"
+        app:itemIconTint="@color/white"
         app:itemRippleColor="@color/purple_200"
         app:labelVisibilityMode="labeled"
-        app:itemTextColor="@color/purple_500"
+        app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

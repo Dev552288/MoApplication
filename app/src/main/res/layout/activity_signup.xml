@@ -11,33 +11,56 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity">
+    tools:context=".activity.SignupActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/images"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:foregroundGravity="center"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/selectImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/images"
+            app:civ_border_color="#BAA9A9"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_camera_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/sign_TextView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="Welcome to Trident"
         android:gravity="center"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="15dp"
+        android:hint="Welcome to My World"
         android:maxLines="1"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
-        tools:layout_editor_absoluteX="0dp" />
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintStart_toStartOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
 
     <EditText
         android:id="@+id/Sign_Email"
@@ -46,15 +69,15 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="24dp"
-        android:padding="7dp"
+        android:padding="10dp"
         android:background="@drawable/background"
         android:drawableLeft="@drawable/ic_email"
-        android:hint="Enter Email"
+        android:hint=" Enter Your Email"
         android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+        app:layout_constraintTop_toBottomOf="@+id/image"
         />
 
     <EditText
@@ -64,8 +87,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:padding="7dp"
-        android:hint="Enter Password"
+        android:padding="10dp"
+        android:hint=" Enter Your Password"
         android:maxLines="1"
         android:background="@drawable/background"
         android:drawableLeft="@drawable/ic_lock"
@@ -81,10 +104,10 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:padding="7dp"
+        android:padding="10dp"
         android:maxLines="1"
         android:drawableLeft="@drawable/ic_lock"
-        android:hint="Confirm Password"
+        android:hint=" Confirm Password"
         android:background="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,10 +121,10 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:padding="7dp"
-        android:hint="Enter Name"
+        android:padding="10dp"
+        android:hint="Enter Your  Name"
         android:maxLines="1"
-        android:drawableLeft="@drawable/ic_person"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
         android:background="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,11 +137,11 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:hint="Enter REGN"
-        android:padding="7dp"
+        android:hint="Enter Your Reg No."
+        android:padding="10dp"
         android:maxLines="1"
         android:background="@drawable/background"
-        android:drawableLeft="@drawable/ic_person"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Sign_Name" />
@@ -130,7 +153,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:padding="7dp"
+        android:padding="10dp"
         android:hint="Enter Phone Number"
         android:inputType="number"
         android:maxLength="10"
@@ -142,14 +165,15 @@
         app:layout_constraintTop_toBottomOf="@+id/Regn"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="20dp"
         android:hint="SIGNUP"
+        android:background="@color/purple"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -161,11 +185,15 @@
         android:id="@+id/Already_Register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:hint="Have an account? Login Here"
-        android:gravity="center"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/login_here"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:gravity="end"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Signup"/>

@@ -1,0 +1,20 @@
+
+k	java:S116"QRename this field "mob_no" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Žó÷Žøÿÿÿÿ
+j	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿŽƒ>8§¿µ£Ä1
+k	java:S116"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿŽƒ>8§¿µ£Ä1
+n	java:S116"SRename this field "Password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿŽƒ>8¨¿µ£Ä1
+k	java:S116"PRename this field "Regno" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿŽƒ>8¨¿µ£Ä1
+l	java:S116"QRename this field "Mob_no" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿŽƒ>8¨¿µ£Ä1
+h
+java:S1845"LRename field "Name" to prevent any misunderstanding/clash with field "name".(ÿŽƒ>8¯¿µ£Ä1
+j
+java:S1845"NRename field "Email" to prevent any misunderstanding/clash with field "email".(ÿŽƒ>8¯¿µ£Ä1
+j
+java:S1845"NRename field "Regno" to prevent any misunderstanding/clash with field "regno".(ÿŽƒ>8¯¿µ£Ä1
+l
+java:S1845"PRename field "Mob_no" to prevent any misunderstanding/clash with field "mob_no".(ÿŽƒ>8¯¿µ£Ä1
+]
+java:S1659"BDeclare "email" and all following declarations on a separate line.(Žó÷Žøÿÿÿÿ
+^
+java:S1659"BDeclare "Email" and all following declarations on a separate line.(ÿŽƒ>8°¿µ£Ä1
+]	java:S125$"<This block of commented-out lines of code should be removed.(š¯êñùÿÿÿÿ8ó¬¿£Ä1

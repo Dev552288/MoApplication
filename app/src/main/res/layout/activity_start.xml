@@ -11,7 +11,7 @@
   <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      tools:context=".StartActivity">
+      tools:context=".activity.FlashActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/image"
@@ -32,7 +32,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="Trident Communication"
+        android:text="Welcome to MoApp"
         android:gravity="center"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -50,6 +50,7 @@
         android:layout_marginEnd="24dp"
         android:gravity="center"
         android:hint="Start"
+        android:textColorHint="@color/white"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
