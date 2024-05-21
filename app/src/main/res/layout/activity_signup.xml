@@ -31,10 +31,9 @@
             app:civ_border_width="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            />
 
         <ImageView
             android:layout_width="50dp"
@@ -53,10 +52,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:hint="Welcome to My World"
+        android:hint="@string/welcome_to_sign_up"
         android:maxLines="1"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/image"
         app:layout_constraintStart_toStartOf="@+id/image"
@@ -67,17 +66,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="24dp"
         android:padding="10dp"
         android:background="@drawable/background"
         android:drawableLeft="@drawable/ic_email"
-        android:hint=" Enter Your Email"
+        android:hint="@string/enter_your_email"
         android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/sign_TextView"
         />
 
     <EditText
@@ -88,7 +87,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:padding="10dp"
-        android:hint=" Enter Your Password"
+        android:hint="@string/enter_your_password"
         android:maxLines="1"
         android:background="@drawable/background"
         android:drawableLeft="@drawable/ic_lock"
@@ -107,22 +106,22 @@
         android:padding="10dp"
         android:maxLines="1"
         android:drawableLeft="@drawable/ic_lock"
-        android:hint=" Confirm Password"
+        android:hint="@string/confirm_password"
         android:background="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Create_Password"
-        tools:ignore="MissingConstraints" />
+         />
 
     <EditText
-        android:id="@+id/Sign_Name"
+        android:id="@+id/sign_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:padding="10dp"
-        android:hint="Enter Your  Name"
+        android:hint="@string/enter_your_name"
         android:maxLines="1"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:background="@drawable/background"
@@ -130,21 +129,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Confirm_Password" />
 
-    <EditText
-        android:id="@+id/Regn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:hint="Enter Your Reg No."
-        android:padding="10dp"
-        android:maxLines="1"
-        android:background="@drawable/background"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Sign_Name" />
 
     <EditText
         android:id="@+id/Sign_Mobileno"
@@ -154,7 +138,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:padding="10dp"
-        android:hint="Enter Phone Number"
+        android:hint="@string/enter_phone_number"
         android:inputType="number"
         android:maxLength="10"
         android:maxLines="1"
@@ -162,7 +146,7 @@
         android:background="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Regn"
+        app:layout_constraintTop_toBottomOf="@+id/sign_Name"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -170,9 +154,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:hint="SIGNUP"
+        android:hint="@string/signup"
         android:background="@color/purple"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -185,15 +169,14 @@
         android:id="@+id/Already_Register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="20dp"
-        android:hint="@string/login_here"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:fontFamily="monospace"
+        android:layout_marginTop="15dp"
+        android:text="@string/login_here"
+        android:textColor="@color/brown"
+        android:textStyle="normal"
         android:gravity="end"
-        android:textSize="14sp"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Signup"/>

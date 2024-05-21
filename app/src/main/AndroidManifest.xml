@@ -22,9 +22,6 @@
             android:name=".activity.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.WebSearchActivity"
-            android:exported="false" />
-        <activity
             android:name=".activity.HomeActivity"
             android:exported="false" />
         <activity

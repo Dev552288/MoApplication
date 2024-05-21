@@ -2,6 +2,15 @@
     <string name="app_name">MoApp</string>
     <string name="open">open</string>
     <string name="close">close</string>
-    <string name="login_here">login here</string>
+    <string name="login_here">Login here</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_to_sign_up">Welcome to Sign up</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_reg_no">Enter Your Reg No.</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="signup">SIGNUP</string>
 
 </resources>

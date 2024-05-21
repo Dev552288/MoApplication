@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,8 +18,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class LoginActivity extends AppCompatActivity {
     CircleImageView imageView;
-    TextView welcomeTrident, Email, password, textRemember, textSignup;
+    TextView Email, password, textRemember, textSignup;
     EditText Username, Password;
+    ImageView welcomeTrident;
     Button button;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     SharedPreference sharedPreference;
@@ -30,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         imageView = findViewById(R.id.selectImage);
-        welcomeTrident = findViewById(R.id.welcometoTextView);
+        welcomeTrident = findViewById(R.id.welcomeImageView);
         Email = findViewById(R.id.Email);
         password = findViewById(R.id.Password);
         textRemember = findViewById(R.id.Remember);
@@ -66,7 +68,6 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-
         });
         textSignup.setOnClickListener(view -> {
             Intent intent = new Intent(LoginActivity.this, SignupActivity.class);

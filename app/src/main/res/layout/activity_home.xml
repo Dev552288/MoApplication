@@ -22,8 +22,6 @@
         android:layout_height="wrap_content"
         android:background="@color/purple"
         app:itemIconSize="25dp"
-        app:itemIconTint="@color/white"
-        app:itemRippleColor="@color/purple_200"
         app:labelVisibilityMode="labeled"
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -10,4 +10,7 @@
     <color name="white">@color/design_default_color_background</color>
     <color name="gray">#6E6666</color>
     <color name="purple">#699600</color>
+    <color name="loginColor">#00E5FF</color>
+    <color name="appThemeColor">#00C3D7</color>
+    <color name="brown">#FF5722</color>
 </resources>

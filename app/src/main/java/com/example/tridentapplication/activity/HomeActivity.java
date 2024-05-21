@@ -17,16 +17,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     FrameLayout fragment_container;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
         fragment_container = findViewById(R.id.fragment_container);
-
         loadFragment(new HomeFragment());
-
         //getting bottom navigation view and attaching the listener
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(this);
@@ -50,7 +46,6 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
                 fragment = new InstagramFragment();
                 break;
         }
-
         return loadFragment(fragment);
     }
 

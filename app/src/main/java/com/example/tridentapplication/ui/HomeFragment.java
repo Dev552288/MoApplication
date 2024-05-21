@@ -2,10 +2,11 @@ package com.example.tridentapplication.ui;
 
 import static android.content.ContentValues.TAG;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -14,7 +15,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Handler;
 import android.util.Base64;
 import android.util.Log;
@@ -25,13 +25,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tridentapplication.activity.LoginActivity;
 import com.example.tridentapplication.model.DataModel;
 import com.example.tridentapplication.model.adapter.MyAdapter;
 import com.example.tridentapplication.R;
 import com.example.tridentapplication.util.SharedPreference;
 import com.example.tridentapplication.activity.HomeActivity;
 import com.google.android.material.navigation.NavigationView;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
@@ -39,19 +39,18 @@ import java.util.TimerTask;
 
 public class HomeFragment extends Fragment {
     ViewPager viewPager;
-    TextView name;
+    TextView nameTextView;
     SharedPreference sharedPreference;
-    String Name;
+    String name;
     Timer timer;
-
     Handler handler;
     NavigationView navigationView;
     ActionBarDrawerToggle actionBarDrawerToggle;
     DrawerLayout drawerLayout;
     Toolbar toolbar;
-    HomeActivity activity;
     DataModel dataModel;
 
+    @SuppressLint("SetTextI18n")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -61,11 +60,9 @@ public class HomeFragment extends Fragment {
         drawerLayout = view.findViewById(R.id.drawer);
 
         toolbar = view.findViewById(R.id.toolbar);
-
         sharedPreference = new SharedPreference(requireContext());
-
         viewPager = view.findViewById(R.id.ViewPager);
-        name = view.findViewById(R.id.name);
+        nameTextView = view.findViewById(R.id.name);
         List<Integer> imageList = new ArrayList<>();
         imageList.add(R.drawable.image1);
         imageList.add(R.drawable.image2);
@@ -83,7 +80,6 @@ public class HomeFragment extends Fragment {
             View headerView = navigationView.getHeaderView(0);
             ImageView drawerImage = (ImageView) headerView.findViewById(R.id.hederImage);
             drawerImage.setImageBitmap(bitmap);
-
         }
         navigationView.setNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
@@ -120,7 +116,9 @@ public class HomeFragment extends Fragment {
                     break;
                 case R.id.logout:
                     Toast.makeText(getActivity(),"Logout Successful",Toast.LENGTH_SHORT).show();
-                    getActivity().finish();
+                    Intent intent = new Intent(getActivity(), LoginActivity.class);
+                    startActivity(intent);
+                    requireActivity().finish();
                     break;
             }
             return true;
@@ -128,9 +126,9 @@ public class HomeFragment extends Fragment {
 
 
         sharedPreference = new SharedPreference(getActivity());
-        Name = sharedPreference.getValue_string("name");
+        name = sharedPreference.getValue_string("name");
 
-        name.setText("Welcome " + Name);
+        nameTextView.setText(getString(R.string.welcome) + name);
 
         MyAdapter myAdapter = new MyAdapter(imageList);
         viewPager.setAdapter(myAdapter);
@@ -148,8 +146,6 @@ public class HomeFragment extends Fragment {
         }, 2000, 2000);
         return view;
     }
-
-
 
     private void setHeaderImage() {
         View headerView = navigationView.getHeaderView(0);
