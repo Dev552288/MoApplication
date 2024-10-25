@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:id="@+id/home"
-    android:title="Home"
-    android:icon="@drawable/ic_home"/>
-    <item android:id="@+id/result"
-        android:title="Facebook"
-        android:icon="@drawable/facebook"/>
-    <item android:id="@+id/attendance"
-        android:title="Google"
-        android:icon="@drawable/google"/>
-    <item android:id="@+id/profile"
-        android:title="Instagram"
-        android:icon="@drawable/insta"/>
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/result"
+        android:icon="@drawable/facebook"
+        android:title="Facebook" />
+    <item
+        android:id="@+id/attendance"
+        android:icon="@drawable/google"
+        android:title="Google" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/insta"
+        android:title="Instagram" />
 </menu>

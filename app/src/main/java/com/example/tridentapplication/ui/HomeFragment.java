@@ -68,6 +68,10 @@ public class HomeFragment extends Fragment {
         imageList.add(R.drawable.image2);
         imageList.add(R.drawable.image3);
         imageList.add(R.drawable.image4);
+
+        sharedPreference = new SharedPreference(getActivity());
+        name = sharedPreference.getValue_string("name");
+
         actionBarDrawerToggle = new ActionBarDrawerToggle(getActivity(), drawerLayout, toolbar, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
@@ -79,6 +83,8 @@ public class HomeFragment extends Fragment {
             Bitmap bitmap = BitmapFactory.decodeByteArray(b,0,b.length);
             View headerView = navigationView.getHeaderView(0);
             ImageView drawerImage = (ImageView) headerView.findViewById(R.id.hederImage);
+            TextView userNameTextView = headerView.findViewById(R.id.userName);
+            userNameTextView.setText(name);
             drawerImage.setImageBitmap(bitmap);
         }
         navigationView.setNavigationItemSelectedListener(item -> {
@@ -123,12 +129,7 @@ public class HomeFragment extends Fragment {
             }
             return true;
         });
-
-
-        sharedPreference = new SharedPreference(getActivity());
-        name = sharedPreference.getValue_string("name");
-
-        nameTextView.setText(getString(R.string.welcome) + name);
+        nameTextView.setText(getString(R.string.welcome)+" "+name);
 
         MyAdapter myAdapter = new MyAdapter(imageList);
         viewPager.setAdapter(myAdapter);
@@ -154,6 +155,7 @@ public class HomeFragment extends Fragment {
         Bitmap image = dataModel.getImage();
         Log.e(TAG, "HeaderImage: "+image);
         drawerImage.setImageBitmap(image);
+        TextView textView = headerView.findViewById(R.id.userName);
+        textView.setText(name);
     }
-
 }

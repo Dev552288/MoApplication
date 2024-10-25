@@ -23,13 +23,10 @@ public class FlashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
         tridentCom =findViewById(R.id.textView);
         start = findViewById(R.id.Start);
-        new Handler(Looper.myLooper()).postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(FlashActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler(Looper.myLooper()).postDelayed(() -> {
+            Intent intent = new Intent(FlashActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
         }, 2000);
     }
 }

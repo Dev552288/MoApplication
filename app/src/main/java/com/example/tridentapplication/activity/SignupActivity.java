@@ -160,14 +160,11 @@ public class SignupActivity extends AppCompatActivity {
                 String encodedImage = Base64.encodeToString(bytes,Base64.DEFAULT);
                 sharedPreference.setValue_string("image", encodedImage);
                 Toast.makeText(this, "Image saved in sharedPreferences", Toast.LENGTH_SHORT).show();
-
                 dataModel.setImage(photo);
                 Log.e("image", "Image: " + photo);
-
                 bundle.putString("image", String.valueOf(photo));
                 profileFragment.setArguments(bundle);
                 profileFragment.setArguments(bundle);
-
             }
         }
     }

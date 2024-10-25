@@ -1,0 +1,15 @@
+
+j	java:S116"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰±Ìõøÿÿÿÿ
+m	java:S116"SRename this field "Username" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Êœøÿÿÿÿ
+m	java:S116"SRename this field "Password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Êœøÿÿÿÿ
+k	java:S116"QRename this field "mob_no" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öƒì¶úÿÿÿÿ
+o
+java:S1845"TRename field "Password" to prevent any misunderstanding/clash with field "password".(¸Êœøÿÿÿÿ
+i
+java:S1845"NRename field "email" to prevent any misunderstanding/clash with field "Email".(öƒì¶úÿÿÿÿ
+`
+java:S1659"EDeclare "password" and all following declarations on a separate line.(‰±Ìõøÿÿÿÿ
+A
+java:S1659"&Declare "Password" on a separate line.(¸Êœøÿÿÿÿ
+g
+java:S1659"LDeclare "confirmpassword" and all following declarations on a separate line.(öƒì¶úÿÿÿÿ

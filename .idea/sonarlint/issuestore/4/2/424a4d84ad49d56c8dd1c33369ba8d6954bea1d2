@@ -1,0 +1,9 @@
+
+\
+java:S1192"FDefine a constant instead of duplicating this literal "image" 4 times.(Ô»ôB
+f
+java:S1659!"KDeclare "createPassword" and all following declarations on a separate line.(ÿÇè´úÿÿÿÿ
+G
+java:S1659"",Declare "alredyRegister" on a separate line.(Â‚åÙûÿÿÿÿ
+m
+java:S3776,"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(¨Œşÿÿÿÿ
